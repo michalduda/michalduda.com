@@ -1,6 +1,9 @@
 <template>
   <div
-    class="section-header font-bold py-4"
+    class="section-header section-header--with-border font-bold py-4"
+    :class="{
+      'border-b border-black': border
+    }"
   >
     <h2 class="font-secondary text-3xl">
       # <slot />
@@ -12,7 +15,7 @@
 export default {
   props: {
     border: {
-      type: String
+      type: Boolean
     }
   }
 }

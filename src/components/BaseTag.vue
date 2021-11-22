@@ -43,7 +43,7 @@ export default {
   color: var(--textColor);
   &.base-tag--outlined {
     background: transparent;
-    color: var(--currentColor);
+    color: var(--textColor);
   }
 }
 </style>

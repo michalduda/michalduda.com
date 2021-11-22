@@ -1,10 +1,6 @@
 <template>
   <div class="about-section">
-    <SelectWrapper class="row-start-2 text-2xl row-start-1">
-      In my work, I'm keeping an end-2-end aproach. I create browser &amp; server-side JavaScript solutions, focusing on efficiency and maintainability. My everyday keywords:
-    </SelectWrapper>
-
-    <div class="row-start-2 col-start-3 text-3xl">
+    <div class="row-start-1 col-start-1 text-3xl">
       <p class=" self-end mb-4 font-secondary">
         I enjoy solving problems, creating products and working with commited people.
       </p>
@@ -12,6 +8,10 @@
         I have more than 5 years of commercional experience as a developer and a team lead.
       </p>
     </div>
+    <SelectWrapper class="row-start-2 col-start-3 text-2xl row-start-1">
+      "Code is like humor. When you have to explain it, it’s bad"
+      <br /> - Cory House
+    </SelectWrapper>
   </div>
 </template>
 
@@ -28,7 +28,7 @@ export default {
 <style>
 .about-section {
   display: grid;
-  grid-template-rows: auto 1fr;
+  grid-template-rows: auto;
   grid-template-columns: 1fr 30px 1fr;
   padding: 20vh 0;
 }

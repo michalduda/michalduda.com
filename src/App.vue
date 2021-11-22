@@ -3,20 +3,26 @@
     <WelcomeSection />
     <AboutSection />
     <ExperienceSection />
+    <KeywordsSection />
+    <ProjectSection />
   </div>
 </template>
 
 <script>
-import WelcomeSection from './components/WelcomeSection'
-import AboutSection from './components/AboutSection'
-import ExperienceSection from './components/ExperienceSection'
+import WelcomeSection from '@/components/WelcomeSection'
+import AboutSection from '@/components/AboutSection'
+import ExperienceSection from '@/components/ExperienceSection'
+import KeywordsSection from '@/components/KeywordsSection'
+import ProjectSection from '@/components/ProjectSection'
 
 export default {
   name: 'App',
   components: {
     WelcomeSection,
     AboutSection,
-    ExperienceSection
+    ExperienceSection,
+    KeywordsSection,
+    ProjectSection
   }
 }
 </script>
