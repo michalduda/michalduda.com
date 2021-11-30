@@ -10,6 +10,7 @@
   "dependencies": {
     "core-js": "^3.6.5",
     "is-dark-color": "^1.2.0",
+    "pinia": "^2.0.4",
     "vue": "^3.0.0"
   },
   "devDependencies": {
