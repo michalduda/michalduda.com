@@ -1,6 +1,6 @@
 <template>
   <span
-    class="base-tag inline-block p-1 mr-3 mb-3 font-secondary"
+    class="base-tag inline-block p-1 mr-3 mb-2 font-secondary"
     :class="{
       'base-tag--outlined': outlined
     }"
@@ -43,7 +43,7 @@ export default {
   color: var(--textColor);
   &.base-tag--outlined {
     background: transparent;
-    color: var(--textColor);
+    color: var(--currentColor);
   }
 }
 </style>

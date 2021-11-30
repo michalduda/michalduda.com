@@ -26,10 +26,11 @@ export default {
     }
   },
   mounted () {
-    this.getBoxes()
     window.addEventListener('resize', () => {
       this.getBoxes()
     })
+
+    this.getBoxes()
   },
   methods: {
     getBoxes () {

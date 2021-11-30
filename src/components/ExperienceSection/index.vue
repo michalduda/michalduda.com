@@ -1,14 +1,16 @@
 <template>
-  <SectionHeader
-    border
-  >
-    Experience
-  </SectionHeader>
-  <ExperienceItem
-    v-for="(item, index) in experience"
-    :key="index"
-    :item="item"
-  />
+  <section class="mt-14">
+    <SectionHeader
+      border
+    >
+      Experience
+    </SectionHeader>
+    <ExperienceItem
+      v-for="(item, index) in experience"
+      :key="index"
+      :item="item"
+    />
+  </section>
 </template>
 
 <script>

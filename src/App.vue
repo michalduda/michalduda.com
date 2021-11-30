@@ -1,5 +1,6 @@
 <template>
-  <div class="page-wrapper">
+  <div class="page-wrapper font-primary px-4">
+    <PageHeader />
     <WelcomeSection />
     <AboutSection />
     <ExperienceSection />
@@ -11,6 +12,7 @@
 </template>
 
 <script>
+import PageHeader from '@/components/PageHeader'
 import WelcomeSection from '@/components/WelcomeSection'
 import AboutSection from '@/components/AboutSection'
 import ExperienceSection from '@/components/ExperienceSection'
@@ -22,6 +24,7 @@ import PageFooter from '@/components/PageFooter'
 export default {
   name: 'App',
   components: {
+    PageHeader,
     WelcomeSection,
     AboutSection,
     ExperienceSection,
@@ -36,18 +39,15 @@ export default {
 <style lang="scss">
 body {
   background: #efefed;
-  font-family: 'Karla', sans-serif;
 }
 hr {
   border-color: #000;
 }
-.font-secondary {
-  font-family: 'Space Grotesk', sans-serif;
+section {
+  grid-template-columns: repeat(12, 1fr);
+
 }
 
-.page-wrapper {
-  padding: 0 30px;
-}
 :root {
   --red: #f82013;
   --black: #000;

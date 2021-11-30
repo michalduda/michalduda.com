@@ -9,7 +9,7 @@
       <img
         :src="require('@/assets/icons/' + icon.src)"
         alt=""
-        class="contact-icon__image"
+        class="w-6"
       >
     </a>
   </div>
@@ -50,8 +50,5 @@ export default {
   &:not(:last-child) {
     margin-right: 20px;;
   }
-}
-.contact-icon__image {
-  height: 20px;
 }
 </style>

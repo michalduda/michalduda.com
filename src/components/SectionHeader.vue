@@ -5,7 +5,7 @@
       'border-b border-black': border
     }"
   >
-    <h2 class="font-secondary text-3xl">
+    <h2 class="font-secondary text-xl">
       # <slot />
     </h2>
   </div>
