@@ -5,6 +5,8 @@
     <ExperienceSection />
     <KeywordsSection />
     <ProjectSection />
+    <ContactSection />
+    <PageFooter />
   </div>
 </template>
 
@@ -14,6 +16,8 @@ import AboutSection from '@/components/AboutSection'
 import ExperienceSection from '@/components/ExperienceSection'
 import KeywordsSection from '@/components/KeywordsSection'
 import ProjectSection from '@/components/ProjectSection'
+import ContactSection from '@/components/ContactSection'
+import PageFooter from '@/components/PageFooter'
 
 export default {
   name: 'App',
@@ -22,7 +26,9 @@ export default {
     AboutSection,
     ExperienceSection,
     KeywordsSection,
-    ProjectSection
+    ProjectSection,
+    ContactSection,
+    PageFooter
   }
 }
 </script>
