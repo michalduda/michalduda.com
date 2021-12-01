@@ -1,17 +1,21 @@
 <template>
+  <Teleport to="body">
+    <MenuModal v-if="menuModalOpen"/>
+  </Teleport>
   <div class="page-wrapper font-primary">
     <PageHeader />
     <WelcomeSection />
-    <AboutSection />
-    <ExperienceSection />
+    <AboutSection id="about"/>
+    <ExperienceSection id="experience"/>
     <KeywordsSection />
-    <ProjectSection />
-    <ContactSection />
+    <ProjectSection id="works"/>
+    <ContactSection id="contact"/>
     <PageFooter />
   </div>
 </template>
 
 <script>
+import MenuModal from '@/components/MenuModal'
 import PageHeader from '@/components/PageHeader'
 import WelcomeSection from '@/components/WelcomeSection'
 import AboutSection from '@/components/AboutSection'
@@ -20,10 +24,13 @@ import KeywordsSection from '@/components/KeywordsSection'
 import ProjectSection from '@/components/ProjectSection'
 import ContactSection from '@/components/ContactSection'
 import PageFooter from '@/components/PageFooter'
+import { mapState } from 'pinia'
+import { applicationStore } from '@/store/application'
 
 export default {
   name: 'App',
   components: {
+    MenuModal,
     PageHeader,
     WelcomeSection,
     AboutSection,
@@ -32,6 +39,9 @@ export default {
     ProjectSection,
     ContactSection,
     PageFooter
+  },
+  computed: {
+    ...mapState(applicationStore, ['menuModalOpen'])
   }
 }
 </script>
@@ -41,10 +51,16 @@ export default {
   --red: #f82013;
   --black: #000;
   --white: #fff;
+  --light-gray: #efefed;
   --padding-x: 1rem;
 }
 body {
-  background: #efefed;
+  background: var(--light-gray);
+  &.no-scroll{
+    position:fixed;
+    overflow:hidden;
+    padding-right: 17px;
+  }
 }
 hr {
   border-color: #000;

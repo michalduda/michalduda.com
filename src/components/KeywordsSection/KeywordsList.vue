@@ -11,23 +11,12 @@
 </template>
 
 <script>
+import { mapState } from 'pinia'
+import { experienceStore } from '@/store/experience'
+
 export default {
-  data () {
-    return {
-      keywords: [
-        'JavaScript',
-        'ES6+',
-        'Vue.js',
-        'SPA',
-        'Web App',
-        'Node.js',
-        'SCSS',
-        'Git',
-        'Jira',
-        'SCRUM',
-        'Agile'
-      ]
-    }
+  computed: {
+    ...mapState(experienceStore, ['keywords'])
   }
 }
 </script>

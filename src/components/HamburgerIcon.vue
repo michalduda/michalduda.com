@@ -2,7 +2,7 @@
   <button
     class="hamburger hamburger--elastic"
     :class="{ 'is-active': active }"
-    @click="toggle"
+    @click="$emit('toggle')"
     type="button"
   >
     <span
@@ -17,14 +17,10 @@
 
 <script>
 export default {
-  data () {
-    return {
-      active: false
-    }
-  },
-  methods: {
-    toggle () {
-      this.active = !this.active
+  props: {
+    active: {
+      type: Boolean,
+      required: true
     }
   }
 }

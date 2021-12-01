@@ -1,8 +1,10 @@
 <template>
-  <header class="page-header flex justify-between align-center mt-4">
+  <header class="page-header flex justify-between align-center mt-4 relative z-index-4">
     <PersonalLogo class="row-start-1"/>
     <HamburgerIcon
       v-if="!breakpoints.md"
+      :active="menuModalOpen"
+      @toggle="toggleMobileMenu"
     />
     <PageNavigation
       v-if="breakpoints.md"
@@ -13,10 +15,11 @@
 
 <script>
 import PersonalLogo from '@/components/PersonalLogo'
-import HamburgerIcon from '@/components/WelcomeSection/HamburgerIcon'
+import HamburgerIcon from '@/components/HamburgerIcon'
 import PageNavigation from '@/components/PageNavigation'
-import { mapState } from 'pinia'
+import { mapState, mapActions } from 'pinia'
 import { screenStore } from '@/store/screen'
+import { applicationStore } from '@/store/application'
 
 export default {
   components: {
@@ -25,7 +28,11 @@ export default {
     PageNavigation
   },
   computed: {
-    ...mapState(screenStore, ['breakpoints'])
+    ...mapState(screenStore, ['breakpoints']),
+    ...mapState(applicationStore, ['menuModalOpen'])
+  },
+  methods: {
+    ...mapActions(applicationStore, ['toggleMobileMenu'])
   }
 }
 </script>

@@ -1,7 +1,7 @@
 <template>
   <ul class="website-navigation">
     <li
-      v-for="(link, index) in links"
+      v-for="(link, index) in navigationLinks"
       :key="index"
     >
       <a
@@ -15,27 +15,12 @@
 </template>
 
 <script>
+import { mapState } from 'pinia'
+import { applicationStore } from '@/store/application'
+
 export default {
-  data () {
-    return {
-      links: [
-        {
-          label: 'News'
-        },
-        {
-          label: 'About'
-        },
-        {
-          label: 'Experience'
-        },
-        {
-          label: 'Works'
-        },
-        {
-          label: 'Contact'
-        }
-      ]
-    }
+  computed: {
+    ...mapState(applicationStore, ['navigationLinks'])
   }
 }
 </script>

@@ -42,7 +42,7 @@ export default {
       return `
         top: ${top}px;
         height: ${box.height * 1.1}px;
-        width: ${box.width + 5}px
+        width: ${box.width + 10}px
       `
     }
   }
