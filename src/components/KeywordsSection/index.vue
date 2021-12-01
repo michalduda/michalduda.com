@@ -1,9 +1,9 @@
 <template>
-  <div class="keywords-section">
-    <SectionHeader>
+  <div class="keywords-section section grid mt-8 mb-14">
+    <SectionHeader class="col-span-12">
       Keywords
     </SectionHeader>
-    <KeywordsList class="py-4"/>
+    <KeywordsList class="col-span-12 mt-2"/>
   </div>
 </template>
 
