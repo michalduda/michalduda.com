@@ -1,11 +1,12 @@
 <template>
-  <section class="contact-section pt-24 pb-12">
-    <h3 class="text-7xl font-secondary">
-      Want to get in touch ? Drop me a line.
+  <section class="contact-section">
+    <ContactStatus class="mt-6 mb-4" />
+    <h3 class="text-3xl font-secondary font-medium">
+      Want to get in touch ?<br> Drop me a line.
     </h3>
     <div class="mt-6">
       <a
-        class="font-secondary text-4xl "
+        class="font-secondary text-xl "
         href="mailto:this.michalduda@gmail.com"
       >
         this.michalduda@gmail.com
@@ -16,8 +17,12 @@
 </template>
 
 <script>
-export default {
+import ContactStatus from '@/components/ContactStatus'
 
+export default {
+  components: {
+    ContactStatus
+  }
 }
 </script>
 

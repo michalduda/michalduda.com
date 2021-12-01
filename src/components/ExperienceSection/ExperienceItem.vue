@@ -19,17 +19,19 @@
       </div>
     </div>
     <p class="experience-item__desc w-full">
-      {{ item.description }}
+      <ReadMoreWrapper :text="item.description" />
     </p>
   </div>
 </template>
 
 <script>
 import BaseTag from '@/components/BaseTag'
+import ReadMoreWrapper from '@/components/ReadMoreWrapper'
 
 export default {
   components: {
-    BaseTag
+    BaseTag,
+    ReadMoreWrapper
   },
   props: {
     item: {

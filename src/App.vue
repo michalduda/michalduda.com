@@ -1,5 +1,5 @@
 <template>
-  <div class="page-wrapper font-primary px-4">
+  <div class="page-wrapper font-primary">
     <PageHeader />
     <WelcomeSection />
     <AboutSection />
@@ -37,6 +37,12 @@ export default {
 </script>
 
 <style lang="scss">
+:root {
+  --red: #f82013;
+  --black: #000;
+  --white: #fff;
+  --padding-x: 1rem;
+}
 body {
   background: #efefed;
 }
@@ -47,10 +53,14 @@ section {
   grid-template-columns: repeat(12, 1fr);
 
 }
-
-:root {
-  --red: #f82013;
-  --black: #000;
-  --white: #fff;
+.page-wrapper {
+  padding: 0 var(--padding-x);
+}
+.stretch-to-edge {
+  width: calc(100% + 2 * var(--padding-x));
+  margin-left: calc(-1 * var(--padding-x));
+}
+.text-red {
+  color: var(--red)
 }
 </style>

@@ -25,9 +25,14 @@ export default {
   },
   computed: {
     inlineStyle () {
+      const options = {
+        override: {
+          '#f82013': true
+        }
+      }
       return {
         '--currentColor': this.color,
-        '--textColor': isDarkColor(this.color) ? '#fff' : '#000'
+        '--textColor': isDarkColor(this.color, options) ? '#fff' : '#000'
       }
     }
   }

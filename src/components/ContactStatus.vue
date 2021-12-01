@@ -1,7 +1,7 @@
 <template>
   <div class="contact-status">
     <div class="contact-status__indicator"></div>
-    <span>
+    <span class="font-xs">
       Available for freelance projects
     </span>
   </div>
@@ -20,8 +20,8 @@ export default {
 }
 .contact-status__indicator {
   background: var(--red);
-  width: 1em;
-  height: 1em;
+  width: .5em;
+  height: .5em;
   border-radius: 50%;
   margin-right: .5em;
 }
