@@ -1,6 +1,9 @@
 <template>
   <div class="experience-item flex flex-wrap py-8">
-    <div class="experience-item__header w-full">
+    <div
+      class="experience-item__header w-full
+        sm:w-5/12"
+    >
       <h3 class="font-bold font-secondary text-xl">
         {{ item.title }}
       </h3>
@@ -18,7 +21,10 @@
         </BaseTag>
       </div>
     </div>
-    <p class="experience-item__desc w-full">
+    <p
+      class="experience-item__desc w-full
+        sm:w-7/12"
+    >
       <ReadMoreWrapper :text="item.description" />
     </p>
   </div>

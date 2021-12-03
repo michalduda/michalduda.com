@@ -1,6 +1,6 @@
 <template>
   <div
-    class="project-visual"
+    class="project-visual h-full flex"
   >
     <transition
       :name="transitionAnimationName"
@@ -10,6 +10,9 @@
         :key="activeProject.id"
         :src="require('@/assets/projects/' + activeProject.img)"
         :alt="activeProject.name"
+        class="
+          sm:object-cover
+        "
       />
     </transition>
   </div>

@@ -2,7 +2,7 @@
   <section class="contact-section">
     <ContactStatus class="mt-6 mb-4" />
     <h3 class="text-3xl font-secondary font-medium">
-      Want to get in touch ?<br> Drop me a line.
+      Want to get in touch ?<br class="sm:hidden"> Drop me a line.
     </h3>
     <div class="mt-6">
       <a
