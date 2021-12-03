@@ -1,5 +1,8 @@
 <template>
-  <section class="mt-14">
+  <section
+    class="mt-14
+      lg:mt-24"
+  >
     <SectionHeader
       border
     >

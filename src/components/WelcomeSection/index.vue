@@ -2,7 +2,8 @@
   <section class="section welcome-section grid relative">
     <MainHeader
       class="col-span-12 mt-14 self-center
-      lg:col-span-9"
+      lg:col-span-12
+      xl:col-span-10"
     />
     <ContactIcons
       class="col-span-12 mt-12 items-center

@@ -6,7 +6,8 @@
 
     <ProjectDetails
       class="col-span-12 mt-4
-        sm:col-span-6 sm:row-start-2 sm:my-8"
+        sm:col-span-6 sm:row-start-2 sm:my-8
+        lg:col-span-5"
     />
 
     <div
@@ -17,7 +18,8 @@
     </div>
     <div
       class="col-span-12 stretch-to-edge overflow-hidden
-      sm:col-span-5 sm:row-start-2 sm:col-start-8"
+        sm:col-span-5 sm:row-start-2 sm:col-start-8
+        lg:col-span-6 lg:col-start-7"
     >
       <ProjectVisual />
     </div>

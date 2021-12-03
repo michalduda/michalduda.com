@@ -2,13 +2,15 @@
   <section class="keywords-section section grid mt-8 mb-14">
     <SectionHeader
       class="col-span-12
-        sm:col-span-5"
+        sm:col-span-5
+        lg:col-span-6"
     >
       Keywords
     </SectionHeader>
     <KeywordsList
       class="col-span-12 mt-2
-        sm:col-span-7"
+        sm:col-span-7
+        lg:col-span-6"
     />
   </section>
 </template>

@@ -84,6 +84,10 @@ section {
 .stretch-to-edge {
   width: calc(100% + 2 * var(--padding-x));
   margin-left: calc(-1 * var(--padding-x));
+  @include sm {
+    width: unset;
+    margin-left: unset;
+  }
 }
 .text-red {
   color: var(--red)

@@ -16,7 +16,10 @@
           {{ tag }}
         </BaseTag>
       </div>
-      <div class="project-details__header text-2xl font-secondary font-bold">
+      <div
+        class="project-details__header text-2xl font-secondary font-bold
+      lg:text-3xl"
+      >
         {{ activeProject.title }}
       </div>
       <div class="project-details__year mt-1">

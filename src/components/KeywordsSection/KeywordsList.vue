@@ -1,7 +1,9 @@
 <template>
   <p class="keyword-list">
     <span
-      class="keyword-list__item font-secondary text-2xl font-bold"
+      class="keyword-list__item font-secondary text-2xl font-bold
+      md:text-3xl
+      xl:text-4xl"
       v-for="(item, index) in keywords"
       :key="index"
     >
