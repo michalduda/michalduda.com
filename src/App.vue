@@ -60,9 +60,6 @@ export default {
   --padding-x: 3rem;
   }
 }
-html {
-  height: 100%;
-}
 body {
   background: var(--light-gray);
   &.no-scroll{

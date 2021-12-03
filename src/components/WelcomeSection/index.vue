@@ -54,8 +54,11 @@ export default {
 
 <style  lang="scss">
 .welcome-section {
-  min-height: calc(100vh - 60px);
+  min-height: calc(100vh - 60px - 64px);
   grid-template-rows: min-content auto min-content;
+  @include sm {
+    min-height: calc(100vh - 60px);
+  }
   @media (min-height: 666px) {
     grid-template-rows: 1fr min-content min-content;
   }
