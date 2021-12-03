@@ -1,5 +1,5 @@
 <template>
-  <div class="projects-section section">
+  <section class="projects-section section">
     <SectionHeader class="col-span-12 mt-4">
       Selected projects
     </SectionHeader>
@@ -10,7 +10,7 @@
     <div class="col-span-12 stretch-to-edge overflow-hidden">
       <ProjectVisual />
     </div>
-  </div>
+  </section>
 </template>
 
 <script>

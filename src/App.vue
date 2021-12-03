@@ -53,6 +53,12 @@ export default {
   --white: #fff;
   --light-gray: #efefed;
   --padding-x: 1rem;
+  @include md {
+  --padding-x: 2rem;
+  }
+  @include xl {
+  --padding-x: 3rem;
+  }
 }
 body {
   background: var(--light-gray);
@@ -66,11 +72,14 @@ hr {
   border-color: #000;
 }
 section {
+  // grid-template-columns: repeat(12, minmax(0, 1fr));
   grid-template-columns: repeat(12, 1fr);
-
 }
 .page-wrapper {
   padding: 0 var(--padding-x);
+  min-width: 300px;
+  max-width: 1920px;
+  margin: auto;
 }
 .stretch-to-edge {
   width: calc(100% + 2 * var(--padding-x));

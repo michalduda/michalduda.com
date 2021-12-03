@@ -18,16 +18,20 @@
 <script>
 import { mapState, mapActions } from 'pinia'
 import { applicationStore } from '@/store/application'
+import { screenStore } from '@/store/screen'
 import scrollToElement from '@/utils/scrollToElement'
 
 export default {
   computed: {
-    ...mapState(applicationStore, ['navigationLinks'])
+    ...mapState(applicationStore, ['navigationLinks']),
+    ...mapState(screenStore, ['breakpoints'])
   },
   methods: {
     ...mapActions(applicationStore, ['toggleMobileMenu']),
     handleScroll (event, target) {
-      this.toggleMobileMenu()
+      if (!this.breakpoints.sm) {
+        this.toggleMobileMenu()
+      }
       this.$nextTick(() => {
         scrollToElement(event, target, -20)
       })

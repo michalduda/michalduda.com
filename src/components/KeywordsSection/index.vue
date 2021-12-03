@@ -1,10 +1,10 @@
 <template>
-  <div class="keywords-section section grid mt-8 mb-14">
+  <section class="keywords-section section grid mt-8 mb-14">
     <SectionHeader class="col-span-12">
       Keywords
     </SectionHeader>
     <KeywordsList class="col-span-12 mt-2"/>
-  </div>
+  </section>
 </template>
 
 <script>
