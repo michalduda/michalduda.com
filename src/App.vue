@@ -79,4 +79,23 @@ section {
 .text-red {
   color: var(--red)
 }
+
+.fade-x-left-enter-from,
+.fade-x-left-leave-to {
+  opacity: 0;
+  transform: translateX(-10px) ;
+}
+
+.fade-x-right-enter-from,
+.fade-x-right-leave-to {
+  opacity: 0;
+  transform: translateX(10px) ;
+}
+
+.fade-x-left-enter-active,
+.fade-x-left-leave-to,
+.fade-x-right-enter-active,
+.fade-x-right-leave-to {
+  transition: opacity 0.3s, transform 0.5s;
+}
 </style>

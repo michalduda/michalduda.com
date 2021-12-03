@@ -1,34 +1,42 @@
 <template>
   <div
     class="project-visual"
-    :style="computedStyle"
   >
-
+    <transition
+      :name="transitionAnimationName"
+      mode="out-in"
+    >
+      <img
+        :key="activeProject.id"
+        :src="require('@/assets/projects/' + activeProject.img)"
+        :alt="activeProject.name"
+      />
+    </transition>
   </div>
 </template>
 
 <script>
-import projectsStore from '@/store/projects'
+import { mapState } from 'pinia'
+import { projectsStore } from '@/store/projects'
+import { useHead } from '@vueuse/head'
+import { computed } from 'vue'
 
 export default {
   computed: {
-    img () {
-      return projectsStore.state.activeProject.img
-    },
-    computedStyle () {
-      return {
-        'background-image': `url(${require('@/assets/projects/' + this.img)})`
-      }
-    }
+    ...mapState(projectsStore, ['activeIndex', 'activeProject', 'assetsToPreload', 'transitionAnimationName'])
+  },
+  setup () {
+    useHead({
+      link: computed(() => {
+        const store = projectsStore()
+
+        return store.assetsToPreload.map(url => ({
+          rel: 'preload',
+          as: 'image',
+          href: require('@/assets/projects/' + url)
+        }))
+      })
+    })
   }
 }
 </script>
-
-<style>
-.project-visual {
-  height: 80vh;
-  background-size: cover;
-  background-position: center center;
-}
-
-</style>

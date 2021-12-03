@@ -7,7 +7,7 @@
     <div class="projects-section__buttons-container col-span-12 stretch-to-edge">
       <SlideControls class="mb-4"/>
     </div>
-    <div class="col-span-12 stretch-to-edge">
+    <div class="col-span-12 stretch-to-edge overflow-hidden">
       <ProjectVisual />
     </div>
   </div>
@@ -35,10 +35,10 @@ export default {
   grid-template-columns: repeat(2, 1fr);
   border-top: 1px solid black;
 }
-.projects-section__buttons-container {
+/* .projects-section__buttons-container {
   position: sticky;
   top: calc(50vh - 22px);
   mix-blend-mode: exclusion;
   color: white;
-}
+} */
 </style>
