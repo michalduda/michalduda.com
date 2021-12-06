@@ -13,7 +13,8 @@
     "is-dark-color": "^1.2.0",
     "pinia": "^2.0.4",
     "sass": "^1.44.0",
-    "vue": "^3.0.0"
+    "vue": "^3.0.0",
+    "vue3-perfect-scrollbar": "^1.5.5"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",

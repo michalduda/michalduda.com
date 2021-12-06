@@ -35,11 +35,6 @@ export default {
       inline-block
       px-4
       py-2;
-
-  }
-  @include lg {
-    @apply
-      w-5/12;
   }
 }
 </style>

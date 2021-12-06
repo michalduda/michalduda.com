@@ -1,10 +1,10 @@
 <template>
   <header
-    class="page-header flex justify-between align-center mt-4 relative z-index-4
+    class="page-header grid align-center mt-4 relative z-index-4
       md:mt-6
       xl:mt-8"
   >
-    <PersonalLogo class="row-start-1"/>
+    <PersonalLogo class="row-start-1 col-span-6"/>
     <HamburgerIcon
       v-if="!breakpoints.md"
       :active="menuModalOpen"
@@ -12,7 +12,7 @@
     />
     <HorizontalNavigation
       v-if="breakpoints.md"
-      class="row-start-1 justify-self-end col-span-2"
+      class="row-start-1 col-span-6"
     />
   </header>
 </template>

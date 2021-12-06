@@ -2,6 +2,13 @@
   <Teleport to="body">
     <MenuModal v-if="menuModalOpen"/>
   </Teleport>
+  <Teleport to="body">
+    <transition
+      name="fade"
+    >
+      <NewsFeed v-if="newsFeedOpen"/>
+    </transition>
+  </Teleport>
   <div class="page-wrapper font-primary">
     <PageHeader />
     <WelcomeSection />
@@ -24,6 +31,7 @@ import KeywordsSection from '@/components/KeywordsSection'
 import ProjectSection from '@/components/ProjectSection'
 import ContactSection from '@/components/ContactSection'
 import PageFooter from '@/components/PageFooter'
+import NewsFeed from '@/components/NewsFeed'
 import { mapState } from 'pinia'
 import { applicationStore } from '@/store/application'
 
@@ -38,10 +46,11 @@ export default {
     KeywordsSection,
     ProjectSection,
     ContactSection,
-    PageFooter
+    PageFooter,
+    NewsFeed
   },
   computed: {
-    ...mapState(applicationStore, ['menuModalOpen'])
+    ...mapState(applicationStore, ['menuModalOpen', 'newsFeedOpen'])
   }
 }
 </script>
@@ -63,7 +72,6 @@ export default {
 body {
   background: var(--light-gray);
   &.no-scroll{
-    position:fixed;
     overflow:hidden;
     padding-right: 17px;
   }
@@ -71,7 +79,7 @@ body {
 hr {
   border-color: #000;
 }
-section {
+header, section {
   // grid-template-columns: repeat(12, minmax(0, 1fr));
   grid-template-columns: repeat(12, 1fr);
 }
@@ -91,6 +99,16 @@ section {
 }
 .text-red {
   color: var(--red)
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
 }
 
 .fade-x-left-enter-from,

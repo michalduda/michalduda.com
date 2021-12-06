@@ -3,11 +3,8 @@ import { defineStore } from 'pinia'
 export const applicationStore = defineStore('application', {
   state: () => ({
     menuModalOpen: false,
+    newsFeedOpen: false,
     navigationLinks: [
-      {
-        label: 'News',
-        target: ''
-      },
       {
         label: 'About',
         target: '#about'
@@ -29,6 +26,12 @@ export const applicationStore = defineStore('application', {
   actions: {
     toggleMobileMenu () {
       this.menuModalOpen = !this.menuModalOpen
+    },
+    openNewsFeed () {
+      this.newsFeedOpen = true
+    },
+    closeNewsFeed () {
+      this.newsFeedOpen = false
     }
   }
 })
