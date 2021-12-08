@@ -3,9 +3,7 @@
     <MenuModal v-if="menuModalOpen"/>
   </Teleport>
   <Teleport to="body">
-    <transition
-      name="fade"
-    >
+    <transition name="fade">
       <NewsFeed v-if="newsFeedOpen"/>
     </transition>
   </Teleport>
@@ -32,8 +30,9 @@ import ProjectSection from '@/components/ProjectSection'
 import ContactSection from '@/components/ContactSection'
 import PageFooter from '@/components/PageFooter'
 import NewsFeed from '@/components/NewsFeed'
-import { mapState } from 'pinia'
+import { mapState, mapActions } from 'pinia'
 import { applicationStore } from '@/store/application'
+import { screenStore } from '@/store/screen'
 
 export default {
   name: 'App',
@@ -50,7 +49,20 @@ export default {
     NewsFeed
   },
   computed: {
-    ...mapState(applicationStore, ['menuModalOpen', 'newsFeedOpen'])
+    ...mapState(applicationStore, ['menuModalOpen', 'newsFeedOpen']),
+    ...mapState(screenStore, ['breakpoints'])
+  },
+  methods: {
+    ...mapActions(applicationStore, ['closeMobileMenu', 'closeNewsFeed'])
+  },
+  watch: {
+    'breakpoints.md' (oldValue, newValue) {
+      if (newValue) {
+        this.closeNewsFeed()
+      } else {
+        this.closeMobileMenu()
+      }
+    }
   }
 }
 </script>

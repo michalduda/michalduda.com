@@ -27,6 +27,9 @@ export const applicationStore = defineStore('application', {
     toggleMobileMenu () {
       this.menuModalOpen = !this.menuModalOpen
     },
+    closeMobileMenu () {
+      this.menuModalOpen = false
+    },
     openNewsFeed () {
       this.newsFeedOpen = true
     },

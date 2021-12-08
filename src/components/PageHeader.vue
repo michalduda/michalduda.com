@@ -1,18 +1,23 @@
 <template>
   <header
-    class="page-header grid align-center mt-4 relative z-index-4
+    class="page-header grid align-center mt-4 relative z-index-6 items-center
       md:mt-6
       xl:mt-8"
   >
-    <PersonalLogo class="row-start-1 col-span-6"/>
+    <PersonalLogo
+      class="row-start-1 col-span-6
+      sm:col-span-4"
+    />
     <HamburgerIcon
       v-if="!breakpoints.md"
       :active="menuModalOpen"
-      @toggle="toggleMobileMenu"
+      @click="handleHamburgerClick"
+      class="col-end-13"
     />
     <HorizontalNavigation
       v-if="breakpoints.md"
-      class="row-start-1 col-span-6"
+      class="row-start-1
+        sm:col-span-8"
     />
   </header>
 </template>
@@ -36,7 +41,11 @@ export default {
     ...mapState(applicationStore, ['menuModalOpen'])
   },
   methods: {
-    ...mapActions(applicationStore, ['toggleMobileMenu'])
+    ...mapActions(applicationStore, ['toggleMobileMenu', 'closeNewsFeed']),
+    handleHamburgerClick () {
+      this.toggleMobileMenu()
+      this.closeNewsFeed()
+    }
   }
 }
 </script>

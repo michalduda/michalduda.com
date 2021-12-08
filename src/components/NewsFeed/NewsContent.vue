@@ -1,7 +1,15 @@
 <template>
-  <div class="news-content w-full bg-white">
+  <div
+    class="news-content relative w-full bg-white pt-14
+    md:pt-0"
+  >
+    <CloseButton
+      class="absolute p-3 z-index-2"
+      @click="closeNewsFeed"
+    />
     <perfect-scrollbar
-      class="h-screen"
+      class="
+      h-screen"
       ref="ps"
     >
       <div class="news-content__wrapper">
@@ -15,14 +23,22 @@
 </template>
 
 <script>
-// import Tweet from '@/models/Tweet'
-import TwitterTimeline from '@/components/NewsFeed/TwitterTimeline.vue'
+import TwitterTimeline from '@/components/NewsFeed/TwitterTimeline'
+import CloseButton from '@/components/NewsFeed/CloseButton'
+import { mapState, mapActions } from 'pinia'
+import { screenStore } from '@/store/screen'
+import { applicationStore } from '@/store/application'
 
 export default {
   components: {
-    TwitterTimeline
+    TwitterTimeline,
+    CloseButton
+  },
+  computed: {
+    ...mapState(screenStore, ['breakpoints'])
   },
   methods: {
+    ...mapActions(applicationStore, ['closeNewsFeed']),
     handleLoaded () {
       this.$refs.ps.update()
     }

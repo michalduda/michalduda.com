@@ -2,7 +2,6 @@
   <button
     class="hamburger hamburger--elastic"
     :class="{ 'is-active': active }"
-    @click="$emit('toggle')"
     type="button"
   >
     <span
