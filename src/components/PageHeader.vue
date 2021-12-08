@@ -17,7 +17,8 @@
     <HorizontalNavigation
       v-if="breakpoints.md"
       class="row-start-1
-        sm:col-span-8"
+        sm:col-span-8
+        lg:col-span-6 lg:col-end-13"
     />
   </header>
 </template>

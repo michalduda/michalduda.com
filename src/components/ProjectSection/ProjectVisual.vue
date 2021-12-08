@@ -2,29 +2,35 @@
   <div
     class="project-visual h-full flex"
   >
-    <transition
-      :name="transitionAnimationName"
-      mode="out-in"
-    >
-      <img
-        :key="activeProject.id"
-        :src="require('@/assets/projects/' + activeProject.img)"
-        :alt="activeProject.name"
-        class="
+    <MouseWrapper class="flex">
+      <transition
+        :name="transitionAnimationName"
+        mode="out-in"
+      >
+        <img
+          :key="activeProject.id"
+          :src="require('@/assets/projects/' + activeProject.img)"
+          :alt="activeProject.name"
+          class="
           sm:object-cover
         "
-      />
-    </transition>
+        />
+      </transition>
+    </MouseWrapper>
   </div>
 </template>
 
 <script>
+import MouseWrapper from '@/components/MouseWrapper'
 import { mapState } from 'pinia'
 import { projectsStore } from '@/store/projects'
 import { useHead } from '@vueuse/head'
 import { computed } from 'vue'
 
 export default {
+  components: {
+    MouseWrapper
+  },
   computed: {
     ...mapState(projectsStore, ['activeIndex', 'activeProject', 'assetsToPreload', 'transitionAnimationName'])
   },

@@ -1,6 +1,6 @@
 <template>
   <transition
-    :name="transitionAnimationName"
+    :name="!breakpoints.sm ? transitionAnimationName : 'fade'"
     mode="out-in"
   >
     <div
@@ -49,13 +49,15 @@
 import BaseTag from '@/components/BaseTag'
 import { mapState } from 'pinia'
 import { projectsStore } from '@/store/projects'
+import { screenStore } from '@/store/screen'
 
 export default {
   components: {
     BaseTag
   },
   computed: {
-    ...mapState(projectsStore, ['activeProject', 'transitionAnimationName'])
+    ...mapState(projectsStore, ['activeProject', 'transitionAnimationName']),
+    ...mapState(screenStore, ['breakpoints'])
   },
   mounted () {
     console.log('mounted')

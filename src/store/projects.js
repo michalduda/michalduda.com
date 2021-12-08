@@ -33,7 +33,7 @@ const getInitialState = () => {
       {
         id: 1,
         tags: ['Lorem', 'Ipsum'],
-        title: 'Hello World',
+        title: 'Hello World 1',
         year: 2020,
         description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam deleniti culpa exercitationem maxime ad numquam labore assumenda temporibus. Corporis, distinctio.',
         img: 'example.png',
@@ -51,7 +51,7 @@ const getInitialState = () => {
       {
         id: 3,
         tags: ['Sit', 'Amet'],
-        title: 'Hello World 2',
+        title: 'Hello World 3',
         year: 2021,
         description: 'Sit amet consectetur adipisicing elit. Veniam deleniti culpa exercitationem maxime ad numquam labore assumenda temporibus. Corporis, distinctio.',
         img: 'example3.png',
@@ -60,7 +60,7 @@ const getInitialState = () => {
       {
         id: 4,
         tags: ['Sit', 'Amet'],
-        title: 'Hello World 2',
+        title: 'Hello World 4',
         year: 2021,
         description: 'Sit amet consectetur adipisicing elit. Veniam deleniti culpa exercitationem maxime ad numquam labore assumenda temporibus. Corporis, distinctio.',
         img: 'example4.png',
