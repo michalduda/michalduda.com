@@ -1,6 +1,7 @@
 <template>
   <span
-    class="base-tag inline-block p-1 mr-3 mb-2 font-secondary"
+    class="base-tag inline-block p-1 mr-3 mb-2 font-secondary font-sm
+    lg:font-base"
     :class="{
       'base-tag--outlined': outlined
     }"
@@ -42,7 +43,6 @@ export default {
 <style lang="scss">
 .base-tag {
   border: 1px solid;
-  font-size: 0.8em;
   border: 1px solid var(--currentColor);
   background: var(--currentColor);
   color: var(--textColor);

@@ -17,12 +17,16 @@
         </BaseTag>
       </div>
       <div
-        class="project-details__header text-2xl font-secondary font-bold
-      lg:text-3xl"
+        class="project-details__header  font-secondary font-bold text-2xl
+          lg:text-3xl
+          xl:text-4xl"
       >
         {{ activeProject.title }}
       </div>
-      <div class="project-details__year mt-1">
+      <div
+        class="project-details__year mt-1
+        xl:text-xl"
+      >
         {{ activeProject.year }}
       </div>
       <div class="project-details__description my-8">

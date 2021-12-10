@@ -1,5 +1,12 @@
 <template>
-  <section class="keywords-section section grid mt-8 mb-14">
+  <section
+    class="keywords-section section grid mt-8 mb-14
+    sm:my-16
+    md:my-18
+    xl:my-20
+    xxl:my-24
+  "
+  >
     <SectionHeader
       class="col-span-12
         sm:col-span-5

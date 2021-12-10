@@ -1,6 +1,6 @@
 <template>
   <div
-    class="project-visual h-full flex"
+    class="project-visual h-full flex border-l border-black"
   >
     <MouseWrapper class="flex">
       <transition
