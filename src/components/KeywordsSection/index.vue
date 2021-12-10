@@ -11,9 +11,8 @@
       class="col-span-12
         sm:col-span-5
         lg:col-span-6"
-    >
-      Keywords
-    </SectionHeader>
+      text="Keywords"
+    />
     <KeywordsList
       class="col-span-12 mt-2
         sm:col-span-7

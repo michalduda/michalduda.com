@@ -20,7 +20,7 @@
         >
       </p>
       <p class="mb-4">
-        I have more than 6 years of commercional experience
+        I have more than {{ yearsOfExperience }} years of commercional experience
         <img
           src="@/assets/about-icons/skyline.png"
           alt=""
@@ -83,6 +83,16 @@ import SelectWrapper from '@/components/SelectWrapper'
 export default {
   components: {
     SelectWrapper
+  },
+  computed: {
+    yearsOfExperience () {
+      const dateFrom = new Date(2015, 5, 1)
+      const dateTo = new Date()
+
+      const deltaInYears = (dateTo.getTime() - dateFrom.getTime()) / 1000 / 60 / 60 / 24 / 365
+
+      return Math.floor(deltaInYears)
+    }
   }
 }
 </script>

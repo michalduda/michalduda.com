@@ -5,9 +5,8 @@
   >
     <SectionHeader
       border
-    >
-      Roles
-    </SectionHeader>
+      text="Roles"
+    />
     <ExperienceItem
       v-for="(item, index) in experience"
       :key="index"

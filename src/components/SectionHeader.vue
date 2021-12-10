@@ -10,7 +10,8 @@
         lg:text-2xl
         xl:text-3xl"
     >
-      # <slot />
+      #{{text}}
+
     </h2>
   </div>
 </template>
@@ -18,6 +19,10 @@
 <script>
 export default {
   props: {
+    text: {
+      type: String,
+      required: true
+    },
     border: {
       type: Boolean
     }
