@@ -1,6 +1,6 @@
 <template>
   <span
-    class="base-tag inline-block p-1 mr-3 mb-2 font-secondary font-sm
+    class="base-tag inline-block py-1 px-2 mr-3 mb-2 font-secondary font-sm
     lg:font-base"
     :class="{
       'base-tag--outlined': outlined

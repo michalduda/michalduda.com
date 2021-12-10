@@ -6,7 +6,7 @@
     <SectionHeader
       border
     >
-      Experience
+      Roles
     </SectionHeader>
     <ExperienceItem
       v-for="(item, index) in experience"

@@ -38,19 +38,24 @@
         xxl:text-2xl"
     >
       <ReadMoreWrapper
-        v-if="!breakpoints.md"
-        :text="item.description"
-      />
-
-      <p v-else>
-        {{ item.description }}
-      </p>
+        :enabled="!breakpoints.md"
+        :text="item.summary"
+      >
+        <p>
+          {{ item.summary }}
+        </p>
+        <BaseList
+          :items="item.bullets"
+          class="mt-4"
+        />
+      </ReadMoreWrapper>
     </div>
   </div>
 </template>
 
 <script>
 import BaseTag from '@/components/BaseTag'
+import BaseList from '@/components/BaseList'
 import ReadMoreWrapper from '@/components/ReadMoreWrapper'
 import { mapState } from 'pinia'
 import { screenStore } from '@/store/screen'
@@ -58,6 +63,7 @@ import { screenStore } from '@/store/screen'
 export default {
   components: {
     BaseTag,
+    BaseList,
     ReadMoreWrapper
   },
   props: {

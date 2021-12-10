@@ -28,6 +28,14 @@ export default {
       '7xl': ['4.5rem', { lineHeight: '1' }],
       '8xl': ['6rem', { lineHeight: '1' }],
       '9xl': ['7.25rem', { lineHeight: '1' }]
+    },
+    extend: {
+      height: {
+        '4e': '1em'
+      },
+      listStyleType: {
+        square: 'square'
+      }
     }
   }
 }

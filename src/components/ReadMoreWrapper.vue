@@ -1,16 +1,21 @@
 <template>
-  <div class="read-more-wrapper">
-    {{ showFullText ? text : shortenedText}}<!--
-    --><span v-if="!showFullText">...</span>
-    &nbsp;
-    <button
-      v-if="!showFullText"
-      class="text-red"
-      @click="showMore"
-    >
-      more
-    </button>
+  <div
+    class="read-more-wrapper"
+    v-if="enabled && !showFullText"
+  >
+    <p>
+      {{ shortenedText}}<!--
+    --><span>...</span>
+      &nbsp;
+      <button
+        class="text-red"
+        @click="showMore"
+      >
+        more
+      </button>
+    </p>
   </div>
+  <slot v-else />
 </template>
 
 <script>
@@ -19,6 +24,9 @@ export default {
     text: {
       type: String,
       required: true
+    },
+    enabled: {
+      type: Boolean
     }
   },
   data () {
