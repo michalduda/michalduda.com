@@ -1,7 +1,8 @@
 <template>
   <section
-    class="section grid mt-14
-      lg:mt-24"
+    class="section about-section grid mt-14 relative
+      lg:mt-24
+      xxl:my-32"
   >
     <div
       class="col-span-12 text-xl
@@ -14,7 +15,7 @@
         I enjoy solving problems, creating products and working with commited people.
       </p>
       <p class="">
-        I have more than 5 years of commercional experience as a developer and a team lead.
+        I have more than 5 years of commercional experience as a developer, solution architect and a team lead.
       </p>
     </div>
     <SelectWrapper
@@ -27,6 +28,11 @@
       "Code is like humor. When you have to explain it, it’s bad"
       <br /> - Cory House
     </SelectWrapper>
+    <img
+      src="@/assets/bg-2.png"
+      alt=""
+      class="about-section__background absolute"
+    >
   </section>
 </template>
 
@@ -41,4 +47,9 @@ export default {
 </script>
 
 <style lang="scss">
+.about-section__background {
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 33%;
+}
 </style>

@@ -1,7 +1,7 @@
 <template>
   <footer
-    class="mb-6
-      sm:flex sm:justify-between sm:mt-20"
+    class="pb-6
+      sm:flex sm:justify-between sm:pt-20"
   >
     <ContactIcons
       class="mt-8

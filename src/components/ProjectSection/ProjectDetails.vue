@@ -29,7 +29,10 @@
       >
         {{ activeProject.year }}
       </div>
-      <div class="project-details__description my-8">
+      <div
+        class="project-details__description my-8
+        xl:text-xl"
+      >
         {{ activeProject.description }}
       </div>
       <div class="project-details__link mt-8">

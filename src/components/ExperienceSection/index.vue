@@ -1,6 +1,6 @@
 <template>
   <section
-    class="mt-14
+    class="experience-section relative mt-14
       lg:mt-24"
   >
     <SectionHeader
@@ -13,6 +13,11 @@
       :key="index"
       :item="item"
     />
+    <img
+      src="@/assets/bg-3.png"
+      alt=""
+      class="experience-section__background absolute"
+    >
   </section>
 </template>
 
@@ -33,6 +38,10 @@ export default {
 }
 </script>
 
-<style>
-
+<style lang="scss">
+.experience-section__background {
+  transform: translate(-50%, -50%) rotate(45deg);
+  top:50%;
+  left: 0;
+}
 </style>

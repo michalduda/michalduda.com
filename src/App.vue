@@ -100,6 +100,11 @@ header, section {
   min-width: 300px;
   max-width: 1920px;
   margin: auto;
+  background-image: url('~@/assets/bg-4.png');
+  background-position: bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+  // overflow: hidden;
 }
 .stretch-to-edge {
   width: calc(100% + 2 * var(--padding-x));
@@ -112,6 +117,10 @@ header, section {
 .text-red {
   color: var(--red)
 }
+// .background-wrapper {
+//   background-size: cover;
+//   padding-bottom var(--padding-x);
+// }
 
 .fade-enter-active,
 .fade-leave-active {
