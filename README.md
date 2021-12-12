@@ -1,4 +1,4 @@
-# michalduda-v4
+# michalduda
 
 ## Project setup
 ```
