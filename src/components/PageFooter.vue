@@ -13,7 +13,8 @@
     >
       Made with ❤ &amp; Vue.js by me, <br class="sm:hidden">designed by <a
         class="underline"
-        href=""
+        href="https://dribbble.com/PaulinaJadeszko"
+        target="_blank"
       >Paulina</a>
     </p>
   </footer>
