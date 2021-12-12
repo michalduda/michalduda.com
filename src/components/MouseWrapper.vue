@@ -65,6 +65,7 @@ export default {
 .mouse-wrapper__cursor {
   position: absolute;
   transform: translate(-50%, -50%) scale(100%,100%);
+  mix-blend-mode: exclusion;
 
 }
 

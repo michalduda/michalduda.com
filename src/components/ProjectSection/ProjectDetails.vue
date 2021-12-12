@@ -31,7 +31,7 @@
       </div>
       <div
         class="project-details__description my-8
-        xl:text-xl"
+        xl:text-xl whitespace-pre-wrap"
       >
         {{ activeProject.description }}
       </div>

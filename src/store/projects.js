@@ -32,38 +32,52 @@ const getInitialState = () => {
     projects: [
       {
         id: 1,
-        tags: ['Lorem', 'Ipsum'],
-        title: 'Hello World 1',
+        tags: ['Web App', 'Vue.js', 'DDD', 'Vuetify'],
+        title: 'eContent Suite - Storage',
         year: 2020,
-        description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam deleniti culpa exercitationem maxime ad numquam labore assumenda temporibus. Corporis, distinctio.',
-        img: 'example.png',
-        link: 'https://google.com'
+        description: `A tailor-made eCommerce solution, acting as a PIM (Product Information Manager) and a DAM (Digital Assets Manager). Created in Vue.js, structured using Domain Driven Design and internal reusable plugins installed via NPM.
+        \nI was resposible for architecting the application, leading the development team, taking care of the code quality, reviewing the merge requests and coding the front-end layer.`,
+        img: '1.jpg',
+        link: null
       },
       {
         id: 2,
-        tags: ['Sit', 'Amet'],
-        title: 'Hello World 2',
+        tags: ['Web App', 'Vue.js', 'DDD', 'Vuetify', 'Node.js', 'Express', 'Gulp'],
+        title: 'eContent Suite - Builder',
         year: 2021,
-        description: 'Sit amet consectetur adipisicing elit. Veniam deleniti culpa exercitationem maxime ad numquam labore assumenda temporibus. Corporis, distinctio.',
-        img: 'example2.png',
-        link: 'https://google.com'
+        description: `An advanced aplication for creating HTML content (LP's, eCommerce Rich Content) by drag'n'drop of universal, reusable modules. Created in Vue.js, DDD approach and internal NPM packages. Connected to a worker service (Node.js, Express, Gulp) for exporting and posprocessing of HTML.
+        \nI was resposible for architecting the application (SPA + backend worker), leading the development team, taking care of the code quality, reviewing the merge requests and coding (front-end SPA and back-end service).`,
+        img: '2.jpg',
+        link: null
       },
       {
         id: 3,
-        tags: ['Sit', 'Amet'],
-        title: 'Hello World 3',
-        year: 2021,
-        description: 'Sit amet consectetur adipisicing elit. Veniam deleniti culpa exercitationem maxime ad numquam labore assumenda temporibus. Corporis, distinctio.',
-        img: 'example3.png',
+        tags: ['SPA', 'Vue.js', 'Nuxt', 'CMS', 'Directus'],
+        title: 'Vayana',
+        year: 2019,
+        description: `A single page application for a tech company conncted to a CMS, optimized by SSR engine to boost SEO. Fully translatable (i18n).
+        \nI was responsible for creating the whole codebase, setting up the CMS and implementing the solution on a dedicated server (PM2).`,
+        img: '3.jpg',
         link: 'https://google.com'
       },
       {
         id: 4,
-        tags: ['Sit', 'Amet'],
-        title: 'Hello World 4',
+        tags: ['SPA', 'Vue.js', 'Tailwind'],
+        title: 'Medictel',
         year: 2021,
-        description: 'Sit amet consectetur adipisicing elit. Veniam deleniti culpa exercitationem maxime ad numquam labore assumenda temporibus. Corporis, distinctio.',
-        img: 'example4.png',
+        description: `A SPA for a medical company. Powered by Vue 3 and Tailwind. Utilizing CSS Grid and flexbox.
+        \nI was responsible for creating the codebase and server deployment.  `,
+        img: '4.jpg',
+        link: 'https://google.com'
+      },
+      {
+        id: 5,
+        tags: ['SPA', 'Vue.js', 'Tailwind'],
+        title: 'Taurusmed',
+        year: 2020,
+        description: `A SPA for a medical company. Powered by Vue 3 and Tailwind. Utilizing CSS Grid and flexbox.
+        \nI was responsible for creating the codebase and server deployment.  `,
+        img: '5.jpg',
         link: 'https://google.com'
       }
     ],
