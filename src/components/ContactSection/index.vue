@@ -11,7 +11,7 @@
         sm:text-4xl
         xl:text-5xl"
     >
-      Want to get in touch ?<br class="md:hidden"> Drop me a line.
+      Want to get in touch&nbsp;?<br class="md:hidden"> Drop me a line.
     </h3>
     <div class="mt-6">
       <a
