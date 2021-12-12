@@ -58,27 +58,27 @@ const getInitialState = () => {
         description: `A single page application for a tech company conncted to a CMS, optimized by SSR engine to boost SEO. Fully translatable (i18n).
         \nI was responsible for creating the whole codebase, setting up the CMS and implementing the solution on a dedicated server (PM2).`,
         img: '3.jpg',
-        link: 'https://google.com'
+        link: 'https://vayana.pl/'
       },
       {
         id: 4,
-        tags: ['SPA', 'Vue.js', 'Tailwind'],
-        title: 'Medictel',
-        year: 2021,
-        description: `A SPA for a medical company. Powered by Vue 3 and Tailwind. Utilizing CSS Grid and flexbox.
-        \nI was responsible for creating the codebase and server deployment.  `,
-        img: '4.jpg',
-        link: 'https://google.com'
-      },
-      {
-        id: 5,
         tags: ['SPA', 'Vue.js', 'Tailwind'],
         title: 'Taurusmed',
         year: 2020,
         description: `A SPA for a medical company. Powered by Vue 3 and Tailwind. Utilizing CSS Grid and flexbox.
         \nI was responsible for creating the codebase and server deployment.  `,
         img: '5.jpg',
-        link: 'https://google.com'
+        link: 'https://224b0752-c580-4427-a2bd-6abaac088041.netlify.app/'
+      },
+      {
+        id: 5,
+        tags: ['SPA', 'Vue.js', 'Tailwind'],
+        title: 'Medictel',
+        year: 2021,
+        description: `A SPA for a medical company. Powered by Vue 3 and Tailwind. Utilizing CSS Grid and flexbox.
+        \nI was responsible for creating the codebase and server deployment.  `,
+        img: '4.jpg',
+        link: 'https://3db33874-15f7-4bf7-8b0f-9e519fb5cdb4.netlify.app/'
       }
     ],
     preloadIndexes: [],

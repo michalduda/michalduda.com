@@ -35,10 +35,14 @@
       >
         {{ activeProject.description }}
       </div>
-      <div class="project-details__link mt-8">
+      <div
+        class="project-details__link mt-8"
+      >
         <a
           :href="activeProject.link"
+          target="_blank"
           class="font-secondary underline text-sm"
+          v-if="activeProject.link"
         >
           Link<!--
          --><img
@@ -47,6 +51,12 @@
           alt="Go to icon"
         >
         </a>
+        <p
+          v-else
+          class="underline"
+        >
+          No public link available
+        </p>
       </div>
     </div>
   </transition>
