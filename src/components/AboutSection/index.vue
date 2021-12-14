@@ -20,7 +20,7 @@
         >
       </p>
       <p class="mb-4">
-        I have more than {{ yearsOfExperience }} years of commercional experience
+        I have more than {{ yearsOfExperience }} years of commercial experience
         <img
           src="@/assets/about-icons/skyline.png"
           alt=""
