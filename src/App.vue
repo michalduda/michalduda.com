@@ -14,8 +14,10 @@
     <ExperienceSection id="experience"/>
     <KeywordsSection />
     <ProjectSection id="works"/>
-    <ContactSection id="contact"/>
-    <PageFooter />
+    <BackgroundWrapper>
+      <ContactSection id="contact"/>
+      <PageFooter />
+    </BackgroundWrapper>
   </div>
 </template>
 
@@ -29,6 +31,7 @@ import KeywordsSection from '@/components/KeywordsSection'
 import ProjectSection from '@/components/ProjectSection'
 import ContactSection from '@/components/ContactSection'
 import PageFooter from '@/components/PageFooter'
+import BackgroundWrapper from '@/components/BackgroundWrapper'
 import NewsFeed from '@/components/NewsFeed'
 import { mapState, mapActions } from 'pinia'
 import { applicationStore } from '@/store/application'
@@ -46,7 +49,8 @@ export default {
     ProjectSection,
     ContactSection,
     PageFooter,
-    NewsFeed
+    NewsFeed,
+    BackgroundWrapper
   },
   computed: {
     ...mapState(applicationStore, ['menuModalOpen', 'newsFeedOpen']),
@@ -100,11 +104,9 @@ header, section {
   min-width: 300px;
   max-width: 1920px;
   margin: auto;
-  background-image: url('~@/assets/bg-4.png');
   background-position: bottom;
   background-size: contain;
   background-repeat: no-repeat;
-  // overflow: hidden;
 }
 .stretch-to-edge {
   width: calc(100% + 2 * var(--padding-x));
