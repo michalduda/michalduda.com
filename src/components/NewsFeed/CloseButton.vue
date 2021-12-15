@@ -4,7 +4,7 @@
   >
     <img
       src="@/assets/x.svg"
-      alt="Close"
+      alt="Close icon"
     >
   </button>
 </template>

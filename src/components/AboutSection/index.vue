@@ -15,7 +15,8 @@
         I enjoy solving problems, creating products and working with commited people.
         <img
           src="@/assets/about-icons/rocket.png"
-          alt=""
+          aria-hidden
+          alt="Rocket icon"
           class="inline-block h-4e ml-1"
         >
       </p>
@@ -23,7 +24,8 @@
         I have more than {{ yearsOfExperience }} years of commercial experience
         <img
           src="@/assets/about-icons/skyline.png"
-          alt=""
+          aria-hidden
+          alt="Building icon"
           class="inline-block h-4e ml-1"
         >
         as a developer, lead and solution architect.
@@ -32,7 +34,8 @@
         During this time, I've created landing pages, eCommerce content and web applications
         <img
           src="@/assets/about-icons/001-coding.png"
-          alt=""
+          aria-hidden
+          alt="Code icon"
           class="inline-block h-4e ml-1"
         >.
       </p>
@@ -41,20 +44,22 @@
         I love rock climbing
         <img
           src="@/assets/about-icons/003-carabiner.png"
-          alt=""
+          aria-hidden
+          alt="Carabiner icon"
           class="inline-block h-4e"
         >,
         water sports
         <img
           src="@/assets/about-icons/002-snorkling.png"
-          alt=""
+          aria-hidden
+          alt="Snorkling icon"
           class="inline-block h-4e"
         >
 
         and being close to nature
         <img
           src="@/assets/about-icons/006-mountain-1.png"
-          alt=""
+          alt="Nature icon"
           class="inline-block h-4e"
         >.
       </p>
@@ -71,8 +76,9 @@
     </SelectWrapper>
     <img
       src="@/assets/bg-2.png"
-      alt=""
-      class="about-section__background absolute"
+      aria-hidden
+      alt="Background splash"
+      class="about-section__background absolute -z-index-1"
     >
   </section>
 </template>

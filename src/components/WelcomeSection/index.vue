@@ -24,8 +24,9 @@
     />
     <img
       src="@/assets/bg-1.png"
-      alt=""
-      class="welcome-section__background absolute"
+      aria-hidden
+      alt="Background splash"
+      class="welcome-section__background absolute -z-index-1"
     >
   </section>
 </template>

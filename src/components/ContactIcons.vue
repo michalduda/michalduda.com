@@ -9,7 +9,7 @@
     >
       <img
         :src="require('@/assets/icons/' + icon.src)"
-        alt=""
+        :alt="icon.label + ' icon'"
         class="w-6"
       >
     </a>

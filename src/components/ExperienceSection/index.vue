@@ -14,8 +14,9 @@
     />
     <img
       src="@/assets/bg-3.png"
-      alt=""
-      class="experience-section__background absolute"
+      aria-hidden
+      alt="Background splash"
+      class="experience-section__background absolute -z-index-1"
     >
   </section>
 </template>

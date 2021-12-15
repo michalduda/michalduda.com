@@ -13,7 +13,7 @@
       >
         <img
           src="@/assets/arrow.svg"
-          alt="Arrow"
+          alt="Navigation arrow"
           aria-hidden
           class="transform w-24 max-w-none"
           :class="{
