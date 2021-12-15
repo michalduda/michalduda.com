@@ -10,10 +10,8 @@
         <img
           :key="activeProject.id"
           :src="require('@/assets/projects/' + activeProject.img)"
-          :alt="activeProject.name"
-          class="
-          sm:object-cover
-        "
+          :alt="activeProject.title + 'cover'"
+          class="sm:object-cover"
         />
       </transition>
     </MouseWrapper>
