@@ -14,7 +14,7 @@
     />
     <img
       src="@/assets/bg-3.png"
-      aria-hidden
+      aria-hidden="true"
       alt="Background splash"
       class="experience-section__background absolute -z-index-1"
     >

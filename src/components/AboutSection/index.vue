@@ -15,7 +15,7 @@
         I enjoy solving problems, creating products and working with commited people.
         <img
           src="@/assets/about-icons/rocket.png"
-          aria-hidden
+          aria-hidden="true"
           alt="Rocket icon"
           class="inline-block h-4e ml-1"
         >
@@ -24,7 +24,7 @@
         I have more than {{ yearsOfExperience }} years of commercial experience
         <img
           src="@/assets/about-icons/skyline.png"
-          aria-hidden
+          aria-hidden="true"
           alt="Building icon"
           class="inline-block h-4e ml-1"
         >
@@ -34,7 +34,7 @@
         During this time, I've created landing pages, eCommerce content and web applications
         <img
           src="@/assets/about-icons/001-coding.png"
-          aria-hidden
+          aria-hidden="true"
           alt="Code icon"
           class="inline-block h-4e ml-1"
         >.
@@ -44,14 +44,14 @@
         I love rock climbing
         <img
           src="@/assets/about-icons/003-carabiner.png"
-          aria-hidden
+          aria-hidden="true"
           alt="Carabiner icon"
           class="inline-block h-4e"
         >,
         water sports
         <img
           src="@/assets/about-icons/002-snorkling.png"
-          aria-hidden
+          aria-hidden="true"
           alt="Snorkling icon"
           class="inline-block h-4e"
         >
@@ -76,7 +76,7 @@
     </SelectWrapper>
     <img
       src="@/assets/bg-2.png"
-      aria-hidden
+      aria-hidden="true"
       alt="Background splash"
       class="about-section__background absolute -z-index-1"
     >

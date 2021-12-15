@@ -24,7 +24,7 @@
     />
     <img
       src="@/assets/bg-1.png"
-      aria-hidden
+      aria-hidden="true"
       alt="Background splash"
       class="welcome-section__background absolute -z-index-1"
     >

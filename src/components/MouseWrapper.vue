@@ -14,7 +14,7 @@
         <img
           src="@/assets/arrow.svg"
           alt="Navigation arrow"
-          aria-hidden
+          aria-hidden="true"
           class="transform w-24 max-w-none"
           :class="{
             'rotate-90': isLeftHalf,
