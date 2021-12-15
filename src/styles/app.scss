@@ -1,0 +1,55 @@
+@import 'helpers.scss';
+@import 'animations.scss';
+
+:root {
+  --red: #f82013;
+  --black: #000;
+  --white: #fff;
+  --light-gray: #efefed;
+  --padding-x: 1rem;
+  @include md {
+  --padding-x: 2rem;
+  }
+  @include xl {
+  --padding-x: 3rem;
+  }
+}
+
+body {
+  background: var(--light-gray);
+  &.no-scroll{
+    overflow:hidden;
+    padding-right: 17px;
+  }
+}
+
+hr {
+  border-color: #000;
+}
+
+header, section {
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.page-wrapper {
+  padding: 0 var(--padding-x);
+  min-width: 300px;
+  max-width: 1920px;
+  margin: auto;
+  background-position: bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.stretch-to-edge {
+  width: calc(100% + 2 * var(--padding-x));
+  margin-left: calc(-1 * var(--padding-x));
+  @include sm {
+    width: unset;
+    margin-left: unset;
+  }
+}
+
+.text-red {
+  color: var(--red)
+}
