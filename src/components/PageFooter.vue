@@ -15,6 +15,7 @@
         class="underline"
         href="https://dribbble.com/PaulinaJadeszko"
         target="_blank"
+        rel="noreferrer noopener"
       >Paulina</a>
     </p>
   </footer>

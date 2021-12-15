@@ -6,6 +6,7 @@
       :key="index"
       class="contact-icon"
       target="_blank"
+      rel="noreferrer noopener"
     >
       <img
         :src="require('@/assets/icons/' + icon.src)"

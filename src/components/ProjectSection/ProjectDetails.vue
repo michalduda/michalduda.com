@@ -40,9 +40,10 @@
       >
         <a
           :href="activeProject.link"
-          target="_blank"
           class="font-secondary underline text-sm"
           v-if="activeProject.link"
+          target="_blank"
+          rel="noreferrer noopener"
         >
           Link<!--
          --><img
