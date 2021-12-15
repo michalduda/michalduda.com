@@ -44,6 +44,9 @@ export const experienceStore = defineStore('experience', {
 
     ],
     keywords: [
+      'HTML5',
+      'CSS3',
+      'SCSS',
       'JavaScript',
       'ES6+',
       'Vue.js',
@@ -52,9 +55,6 @@ export const experienceStore = defineStore('experience', {
       'Web Apps',
       'API',
       'Node.js',
-      'Architecture',
-      'oAuth',
-      'SCSS',
       'Git',
       'Jira',
       'Agile'
