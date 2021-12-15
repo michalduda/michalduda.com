@@ -4,6 +4,17 @@ export const experienceStore = defineStore('experience', {
   state: () => ({
     experience: [
       {
+        title: 'Head of technology',
+        companies: ['Publicis Commerce'],
+        tags: ['International', 'Strategy'],
+        summary: 'My responsibilities were focused on managing the tech team and leading the efforts on a company and international (group) level, especially:',
+        bullets: [
+          'Consulting tech solutions and cooperating with other business and production teams',
+          'Managing the priorities and distributing the tasks',
+          'Overseeing the quality and ways-of-working'
+        ]
+      },
+      {
         title: 'Full-stack Developer',
         companies: ['Freelance', 'Saatchi & Saatchi', 'Publicis Commerce'],
         tags: ['JavaScript', 'Full-stack', 'Lead'],
@@ -29,19 +40,7 @@ export const experienceStore = defineStore('experience', {
           'Creating diagrams',
           'Discussing the solutions with the tech team'
         ]
-      },
-      {
-        title: 'Head of technology',
-        companies: ['Publicis Commerce'],
-        tags: ['International', 'Strategy'],
-        summary: 'My responsibilities were focused on managing the tech team and leading the efforts on a company and international (group) level, especially:',
-        bullets: [
-          'Consulting tech solutions and cooperating with other business and production teams',
-          'Managing the priorities and distributing the tasks',
-          'Overseeing the quality and ways-of-working'
-        ]
       }
-
     ],
     keywords: [
       'HTML5',
