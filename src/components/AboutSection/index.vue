@@ -51,7 +51,7 @@
           class="inline-block h-4e"
         >
 
-        and being close to the nature
+        and being close to nature
         <img
           src="@/assets/about-icons/006-mountain-1.png"
           alt=""
